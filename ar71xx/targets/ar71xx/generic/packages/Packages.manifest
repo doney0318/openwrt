@@ -1,0 +1,1990 @@
+Package: base-files
+Version: 199-r1919-8b05d9f
+Depends: libc, netifd, procd, jsonfilter, fstools, fwtool
+Source: package/base-files
+License: GPL-2.0
+Section: base
+Architecture: mips_24kc
+Installed-Size: 69462
+Filename: base-files_199-r1919-8b05d9f_mips_24kc.ipk
+Size: 70475
+SHA256sum: 8637d9ffe478c5130c8d55e96f3f6a4b314a066c18bffd16188b91b60063d7b9
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: block-mount
+Version: 2019-08-28-6a61b9ac-3
+Depends: libc, ubox, libubox, libuci, libblobmsg-json, libjson-c
+Source: package/system/fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: mips_24kc
+Installed-Size: 22424
+Filename: block-mount_2019-08-28-6a61b9ac-3_mips_24kc.ipk
+Size: 22997
+SHA256sum: 89fb575b6b37d3745af3999b85b2ef00001c2baa7264cea150c04f802ca5fe85
+Description:  Block device mounting and checking
+
+Package: fstools
+Version: 2019-08-28-6a61b9ac-3
+Depends: libc, ubox
+Source: package/system/fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: mips_24kc
+Installed-Size: 16980
+Filename: fstools_2019-08-28-6a61b9ac-3_mips_24kc.ipk
+Size: 17720
+SHA256sum: 9070305ec7650c83101d1b92b6d2a6e4b5c69da36dac102277b291044c578806
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 1
+Depends: libc
+Source: package/system/fwtool
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 3231
+Filename: fwtool_1_mips_24kc.ipk
+Size: 3938
+SHA256sum: f06b89d2911333860f6c6b01b222f3f1c73acfbdb178484b76e705408eaf6c73
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: iptables-mod-conntrack-extra
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-conntrack-extra, kmod-ipt-raw
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 10162
+Filename: iptables-mod-conntrack-extra_1.8.2-2_mips_24kc.ipk
+Size: 10950
+SHA256sum: b51472f4c30b9f1f92ec28d1922dad9b99951c4c033e9adcf9fe7a570beef294
+Description:  Extra iptables extensions for connection tracking.
+ 
+ Matches:
+ - connbytes
+ - connlimit
+ - connmark
+ - recent
+ - helper
+ 
+ Targets:
+ - CONNMARK
+ 
+
+Package: iptables-mod-ipopt
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-ipopt
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 12924
+Filename: iptables-mod-ipopt_1.8.2-2_mips_24kc.ipk
+Size: 13677
+SHA256sum: 1b4e31cef19656469095cb453d7f5a8a9a82c466c58243ba0bc9b32e91915601
+Description:  iptables extensions for matching/changing IP packet options.
+ 
+ Matches:
+ - dscp
+ - ecn
+ - length
+ - statistic
+ - tcpmss
+ - unclean
+ - hl
+ 
+ Targets:
+ - DSCP
+ - CLASSIFY
+ - ECN
+ - HL
+ 
+
+Package: iptables-mod-ipsec
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-ipsec
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 5515
+Filename: iptables-mod-ipsec_1.8.2-2_mips_24kc.ipk
+Size: 6245
+SHA256sum: d011cd5c407c1ff6676b6eb7a4611379153cfe8dbd6c5666155fce22a6d9970e
+Description:  iptables extensions for matching ipsec traffic.
+ 
+ Matches:
+ - ah
+ - esp
+ - policy
+ 
+
+Package: iptables-mod-nat-extra
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-nat-extra
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2329
+Filename: iptables-mod-nat-extra_1.8.2-2_mips_24kc.ipk
+Size: 3052
+SHA256sum: 7638bdd1ffa3827cc6a1e414e2969296f173cef72c378025e71bb79200539a8c
+Description:  iptables extensions for extra NAT targets.
+ 
+ Targets:
+ - MIRROR
+ - NETMAP
+
+Package: iptables-mod-tproxy
+Version: 1.8.2-2
+Depends: libc, iptables, kmod-ipt-tproxy
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2905
+Filename: iptables-mod-tproxy_1.8.2-2_mips_24kc.ipk
+Size: 3633
+SHA256sum: 32f8d0f1d5f41a940efddf8cd46e3c2d1a4809b07d6b2fc3aa2ae7ecb65a0c83
+Description:  Transparent proxy iptables extensions.
+ 
+ Matches:
+ - socket
+ 
+ Targets:
+ - TPROXY
+ 
+
+Package: iptables
+Version: 1.8.2-2
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: mips_24kc
+Installed-Size: 21840
+Filename: iptables_1.8.2-2_mips_24kc.ipk
+Size: 22614
+SHA256sum: 49468c53df5661a07553216557bdc24e6ead7723faca651f89e8697605cd9136
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iwinfo
+Version: 2019-09-22-313e8270-1
+Depends: libc, libiwinfo
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 5995
+Filename: iwinfo_2019-09-22-313e8270-1_mips_24kc.ipk
+Size: 6747
+SHA256sum: b3608bf70bba782f32bc7db0617b746e923c723a62b85fc21363cd50707fa2d0
+Description:  Command line frontend for the wireless information library.
+
+Package: kmod-ath9k-common
+Version: 4.14.167+4.19.98-1-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ath
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 122705
+Filename: kmod-ath9k-common_4.14.167+4.19.98-1-1_mips_24kc.ipk
+Size: 119886
+SHA256sum: d16de9b9f5ae1dd62fa18d8c063a0f689e97e006ab064dd83a4b1f863d99450f
+Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
+
+Package: kmod-ath9k
+Version: 4.14.167+4.19.98-1-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ath9k-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 58589
+Filename: kmod-ath9k_4.14.167+4.19.98-1-1_mips_24kc.ipk
+Size: 59044
+SHA256sum: 6d2ef47566633ccffbb719bc30871214fb1daecc0e420710f60e4b18a92201d4
+Description:  This module adds support for wireless adapters based on
+ Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
+
+Package: kmod-ath
+Version: 4.14.167+4.19.98-1-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 11452
+Filename: kmod-ath_4.14.167+4.19.98-1-1_mips_24kc.ipk
+Size: 11961
+SHA256sum: 832d08c10220e0bfb9196fa8bf1f63128bc1d352f128b50f2723753c4792f5c7
+Description:  This module contains some common parts needed by Atheros Wireless drivers.
+
+Package: kmod-cfg80211
+Version: 4.14.167+4.19.98-1-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), iw, wireless-regdb
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 131217
+Filename: kmod-cfg80211_4.14.167+4.19.98-1-1_mips_24kc.ipk
+Size: 131577
+SHA256sum: c1dc7e390ab448abc15bd359c3f5dc47291c0518247e154627729bf25df0c8ef
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-acompress
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3205
+Filename: kmod-crypto-acompress_4.14.167-1_mips_24kc.ipk
+Size: 3919
+SHA256sum: b246d84f066c8663a1354752284bdbbb728b0f0dae7209f03b5169ffcedf7071
+Description:  Asynchronous Compression operations
+
+Package: kmod-crypto-aead
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-null
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3183
+Filename: kmod-crypto-aead_4.14.167-1_mips_24kc.ipk
+Size: 3902
+SHA256sum: fcd880f05d177ed109beb9c8f5f1082ffd19146b6ae2ae30e5533c90f786ded6
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-arc4
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 191
+Filename: kmod-crypto-arc4_4.14.167-1_mips_24kc.ipk
+Size: 906
+SHA256sum: 9d84eda0e6976c1f034e1842ffe0def19c425a9e44cf4ed39901ea37c51345ac
+Description:  ARC4 cipher CryptoAPI module
+
+Package: kmod-crypto-authenc
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-manager, kmod-crypto-null
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3294
+Filename: kmod-crypto-authenc_4.14.167-1_mips_24kc.ipk
+Size: 4030
+SHA256sum: 7bd0958517fbc21f0d3c8f341b033be3984f8c8d1ece46efc6edc4cfccb48fc7
+Description:  Combined mode wrapper for IPsec
+
+Package: kmod-crypto-cbc
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-manager
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2165
+Filename: kmod-crypto-cbc_4.14.167-1_mips_24kc.ipk
+Size: 2931
+SHA256sum: 835d7f9a9706c808230e78e125dd8b75021cab311531192d03d187e98ea29cc4
+Description:  Cipher Block Chaining CryptoAPI module
+
+Package: kmod-crypto-ccm
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-ctr, kmod-crypto-aead
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 5945
+Filename: kmod-crypto-ccm_4.14.167-1_mips_24kc.ipk
+Size: 6702
+SHA256sum: 29e9452e976a7713c75ca0d261da4a2b02435f67e50af30680f159c87f4f0f63
+Description:  Support for Counter with CBC MAC (CCM)
+
+Package: kmod-crypto-cmac
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2071
+Filename: kmod-crypto-cmac_4.14.167-1_mips_24kc.ipk
+Size: 2850
+SHA256sum: 0dcb6221884c24478c2fcf962a064eea7f5982a7401d743d25e6084669d9fe7b
+Description:  Support for Cipher-based Message Authentication Code (CMAC)
+
+Package: kmod-crypto-crc32c
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1015
+Filename: kmod-crypto-crc32c_4.14.167-1_mips_24kc.ipk
+Size: 1763
+SHA256sum: 36525ccff7388c2291fb046761d79acc38d11a70227dd7837ae8b44758143697
+Description:  CRC32c CRC module
+
+Package: kmod-crypto-ctr
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-manager, kmod-crypto-seqiv, kmod-crypto-iv
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2922
+Filename: kmod-crypto-ctr_4.14.167-1_mips_24kc.ipk
+Size: 3653
+SHA256sum: 16a5c3fd4c78fcf85a124b7b69207ed0fbf93be767507643091d638ac95979df
+Description:  Counter Mode CryptoAPI module
+
+Package: kmod-crypto-deflate
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-lib-zlib-inflate, kmod-lib-zlib-deflate, kmod-crypto-acompress
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2029
+Filename: kmod-crypto-deflate_4.14.167-1_mips_24kc.ipk
+Size: 2773
+SHA256sum: ea6c61f57a213e7683b7dcabcbed3f858fa75336b4fc44369018f229addca82e
+Description:  Deflate compression CryptoAPI module
+
+Package: kmod-crypto-des
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 8305
+Filename: kmod-crypto-des_4.14.167-1_mips_24kc.ipk
+Size: 8717
+SHA256sum: 8239da9ca880628758bd0683b0df2245d19eb6ebf130a5693536975affb9d760
+Description:  DES/3DES cipher CryptoAPI module
+
+Package: kmod-crypto-ecb
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-manager
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1536
+Filename: kmod-crypto-ecb_4.14.167-1_mips_24kc.ipk
+Size: 2292
+SHA256sum: f56ef47f83f1070ad2effc1eda88ec541138c314c193f6f3b90b1866783048c1
+Description:  Electronic CodeBook CryptoAPI module
+
+Package: kmod-crypto-echainiv
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-aead
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1694
+Filename: kmod-crypto-echainiv_4.14.167-1_mips_24kc.ipk
+Size: 2453
+SHA256sum: 7b9939d739b2275bff3a54e84da696aab8401168cee8ad572baef62735e60193
+Description:  Encrypted Chain IV Generator
+
+Package: kmod-crypto-hash
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 6241
+Filename: kmod-crypto-hash_4.14.167-1_mips_24kc.ipk
+Size: 6952
+SHA256sum: 4c984b54eeb0b0df81a1119d44b92b47e414bef2db1cf5ab416eac8b9943c822
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-hmac
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash, kmod-crypto-manager
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2281
+Filename: kmod-crypto-hmac_4.14.167-1_mips_24kc.ipk
+Size: 3009
+SHA256sum: 4fd8401d39c45a8bcc9387042f4af0adb0defd41534cf59b7474d35ecbc8d811
+Description:  HMAC digest CryptoAPI module
+
+Package: kmod-crypto-iv
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-manager, kmod-crypto-rng, kmod-crypto-wq
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 200
+Filename: kmod-crypto-iv_4.14.167-1_mips_24kc.ipk
+Size: 932
+SHA256sum: 95aa07335149ef36065a42431730d66f90bb1626b7681044ea62bfc625c746bb
+Description:  CryptoAPI initialization vectors
+
+Package: kmod-crypto-manager
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2332
+Filename: kmod-crypto-manager_4.14.167-1_mips_24kc.ipk
+Size: 3056
+SHA256sum: f42b00f349e987024039837d7c24ac364f6b0cd886af4578d95c1217bf05f2c7
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-md4
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2399
+Filename: kmod-crypto-md4_4.14.167-1_mips_24kc.ipk
+Size: 3102
+SHA256sum: d0f6e0373f691b969c76704a54650d4740c167fc43011a75df788a91f5a36ba2
+Description:  MD4 digest CryptoAPI module
+
+Package: kmod-crypto-md5
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3241
+Filename: kmod-crypto-md5_4.14.167-1_mips_24kc.ipk
+Size: 3961
+SHA256sum: 9c89f46f5662875ed1be465792d52451617c965d2b7887fd6487b1c86eb7085d
+Description:  MD5 digest CryptoAPI module
+
+Package: kmod-crypto-null
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1697
+Filename: kmod-crypto-null_4.14.167-1_mips_24kc.ipk
+Size: 2411
+SHA256sum: 2a6db1cf66bb14b6a5bb051f1eeca9ac55d86a86b4cff7295d0f79580e518012
+Description:  Null CryptoAPI module
+
+Package: kmod-crypto-pcompress
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: kmod-crypto-pcompress_4.14.167-1_mips_24kc.ipk
+Size: 825
+SHA256sum: 3eb466526d589586444ac49dccc799f59ecc9be811f5ffa05b9816346d33e784
+Description:  CryptoAPI Partial (de)compression operations
+
+Package: kmod-crypto-rng
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash, kmod-crypto-hmac, kmod-crypto-sha256
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 8281
+Filename: kmod-crypto-rng_4.14.167-1_mips_24kc.ipk
+Size: 9054
+SHA256sum: d742448943acbb925bcedcb27699d71970075a684f57d689d11166fb042c4492
+Description:  CryptoAPI random number generation
+
+Package: kmod-crypto-seqiv
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-aead, kmod-crypto-rng
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1890
+Filename: kmod-crypto-seqiv_4.14.167-1_mips_24kc.ipk
+Size: 2660
+SHA256sum: c6e5bf4dee23f55b4a8c69f3f0f3203dd496e45a4806997c43d0f776317d5ebb
+Description:  CryptoAPI Sequence Number IV Generator
+
+Package: kmod-crypto-sha1
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1738
+Filename: kmod-crypto-sha1_4.14.167-1_mips_24kc.ipk
+Size: 2493
+SHA256sum: 93d4f161557cb2c62a8dc7788c05abb63aab3efe410b0bc1530f0ceb516a909d
+Description:  SHA1 digest CryptoAPI module
+
+Package: kmod-crypto-sha256
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 4001
+Filename: kmod-crypto-sha256_4.14.167-1_mips_24kc.ipk
+Size: 4705
+SHA256sum: a3bffed3fdecac5f66aedd214573b53da5dc4c87addbc36604b6470efea6d7a0
+Description:  SHA224 SHA256 digest CryptoAPI module
+
+Package: kmod-crypto-sha512
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-hash
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 5824
+Filename: kmod-crypto-sha512_4.14.167-1_mips_24kc.ipk
+Size: 6552
+SHA256sum: 9a77008d06b6360fcf44f32ba637d19e294f4868e0f4e0bf0df1f92e458d6176
+Description:  SHA512 digest CryptoAPI module
+
+Package: kmod-crypto-wq
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 194
+Filename: kmod-crypto-wq_4.14.167-1_mips_24kc.ipk
+Size: 914
+SHA256sum: 8c6e9559b22b51f2bee2257b2f79e127f6cc31dee1bee2915b2168ec48d78e83
+Description:  CryptoAPI work queue handling
+
+Package: kmod-cryptodev
+Version: 4.14.167+1.10-ar71xx-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-authenc, kmod-crypto-hash
+Source: package/kernel/cryptodev-linux
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: kernel
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 19472
+Filename: kmod-cryptodev_4.14.167+1.10-ar71xx-1_mips_24kc.ipk
+Size: 20276
+SHA256sum: ca553c6814b9b5e773c8634f577d78d39b5981ee787218634b39cb7f0759817e
+Description:  This is a driver for that allows to use the Linux kernel supported
+ hardware ciphers by user-space applications.
+
+Package: kmod-dnsresolver
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: kmod-dnsresolver_4.14.167-1_mips_24kc.ipk
+Size: 804
+SHA256sum: abb96ae325b762b594211a99661435b4c84eec6ad11619112f83573cf19563c1
+Description:  In-kernel DNS Resolver
+
+Package: kmod-fs-cifsd
+Version: 4.14.167+2019-11-30-973e0cce-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nls-base, kmod-nls-utf8, kmod-crypto-md4, kmod-crypto-md5, kmod-crypto-hmac, kmod-crypto-ecb, kmod-crypto-des, kmod-crypto-sha256, kmod-crypto-cmac, kmod-crypto-sha512, kmod-crypto-aead, kmod-crypto-ccm
+Source: package/lean/cifsd
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: kernel
+Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 81639
+Filename: kmod-fs-cifsd_4.14.167+2019-11-30-973e0cce-1_mips_24kc.ipk
+Size: 82313
+SHA256sum: 8e17400e2356a69125bdcc17718ab40e926679a6d911230f9c7863ca030a0b34
+Description:  Kernel module for a CIFS/SMBv2,3 fileserver.
+
+Package: kmod-fs-exfat
+Version: 4.14.167+2018-04-17-01c30ad5-2
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nls-base
+Source: feeds/packages/kernel/exfat-nofuse
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: kernel
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 45877
+Filename: kmod-fs-exfat_4.14.167+2018-04-17-01c30ad5-2_mips_24kc.ipk
+Size: 46623
+SHA256sum: c3ce60169ab8e3ade31511a5a9ed7bdeb7b6f324627c9050e1e5ba3e82f5afcb
+Description:  Kernel module for ExFAT Filesytems
+
+Package: kmod-fs-ext4
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-lib-crc16, kmod-crypto-hash, kmod-crypto-crc32c
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 243805
+Filename: kmod-fs-ext4_4.14.167-1_mips_24kc.ipk
+Size: 244019
+SHA256sum: f8aa54a31137c0dd9f999b5b607d83e6a31b77e5480fd1700124cddf80b2e5ed
+Description:  Kernel module for EXT4 filesystem support
+
+Package: kmod-fs-nfs-common
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 113142
+Filename: kmod-fs-nfs-common_4.14.167-1_mips_24kc.ipk
+Size: 113703
+SHA256sum: ef5a4ca0a381e9709560540146fb498cf09311e139814234af84839f88437e03
+Description:  Common NFS filesystem modules
+
+Package: kmod-fs-nfs
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-fs-nfs-common, kmod-dnsresolver
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 62819
+Filename: kmod-fs-nfs_4.14.167-1_mips_24kc.ipk
+Size: 63312
+SHA256sum: 69e3ee349eefde26709ae74d2c7b55ec8dd68f4b57242bd8d688a8aad7cc40ec
+Description:  Kernel module for NFS client support
+
+Package: kmod-fs-ntfs
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nls-base
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 51855
+Filename: kmod-fs-ntfs_4.14.167-1_mips_24kc.ipk
+Size: 52518
+SHA256sum: 1b68d20d65523ce3ab50827cb94d5a259a53fc4e20146c67a972e7a2cb088d3c
+Description:  Kernel module for NTFS filesystem support
+
+Package: kmod-gpio-button-hotplug
+Version: 4.14.167-2
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/gpio-button-hotplug
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 4475
+Filename: kmod-gpio-button-hotplug_4.14.167-2_mips_24kc.ipk
+Size: 5352
+SHA256sum: 9b3df4489f5367171007f24d66414a9e7e6cfbe43ab7655f61dc5127f5cf20c8
+Description:  This is a replacement for the following in-kernel drivers:
+ 1) gpio_keys (KEYBOARD_GPIO)
+ 2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
+ 
+ Instead of generating input events (like in-kernel drivers do) it generates
+ uevent-s and broadcasts them. This allows disabling input subsystem which is
+ an overkill for OpenWrt simple needs.
+
+Package: kmod-gre
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-iptunnel
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 10733
+Filename: kmod-gre_4.14.167-1_mips_24kc.ipk
+Size: 11449
+SHA256sum: e4c8a34ab83ddb892500daf75a85f9a5a2c64fcb87b5715f83a37f053485d202
+Description:  Generic Routing Encapsulation support
+
+Package: kmod-ifb
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2985
+Filename: kmod-ifb_4.14.167-1_mips_24kc.ipk
+Size: 3690
+SHA256sum: 44111e4d05e0e933b0409075dc4047e8ce64e6afc2c9f8349883eca13f986539
+Description:  The Intermediate Functional Block
+
+Package: kmod-input-core
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 16623
+Filename: kmod-input-core_4.14.167-1_mips_24kc.ipk
+Size: 17334
+SHA256sum: e02ad9fb014744532122d97022e65af651d250eccbc714ce56e515f44b85c370
+Description:  Kernel modules for support of input device
+
+Package: kmod-ip6-tunnel
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-iptunnel6
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 14934
+Filename: kmod-ip6-tunnel_4.14.167-1_mips_24kc.ipk
+Size: 15639
+SHA256sum: 3e9143c31100c31d11391a49b6cc80242266e1b2ec3f3b076f3c4a833a5bed95
+Description:  Kernel modules for IPv6-in-IPv6 and IPv4-in-IPv6 tunnelling
+
+Package: kmod-ip6tables
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 6220
+Filename: kmod-ip6tables_4.14.167-1_mips_24kc.ipk
+Size: 6987
+SHA256sum: 123a68a61f2ef95df8901e37c641fcf7b1907929413a88d8de4ab9e9139dda34
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipsec4
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipsec, kmod-iptunnel4
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 14293
+Filename: kmod-ipsec4_4.14.167-1_mips_24kc.ipk
+Size: 15060
+SHA256sum: b76f0f3c9771831deeba2b9038052a9d5bf36666067686d7e8d6139f2cb0eab9
+Description:  Kernel modules for IPsec support in IPv4.
+ Includes:
+ - ah4
+ - esp4
+ - ipcomp4
+ - xfrm4_mode_beet
+ - xfrm4_mode_transport
+ - xfrm4_mode_tunnel
+ - xfrm4_tunnel
+
+Package: kmod-ipsec6
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipsec, kmod-iptunnel6
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 14983
+Filename: kmod-ipsec6_4.14.167-1_mips_24kc.ipk
+Size: 15757
+SHA256sum: 092479839df583154ed7491b40b98818999f8bd2b87cf0722db1c69d54afa20c
+Description:  Kernel modules for IPsec support in IPv6.
+ Includes:
+ - ah6
+ - esp6
+ - ipcomp6
+ - xfrm6_mode_beet
+ - xfrm6_mode_transport
+ - xfrm6_mode_tunnel
+ - xfrm6_tunnel
+
+Package: kmod-ipsec
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-authenc, kmod-crypto-cbc, kmod-crypto-deflate, kmod-crypto-des, kmod-crypto-echainiv, kmod-crypto-hmac, kmod-crypto-iv, kmod-crypto-md5, kmod-crypto-sha1
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 32669
+Filename: kmod-ipsec_4.14.167-1_mips_24kc.ipk
+Size: 33530
+SHA256sum: 99c79daebef2e1e327023bf432ea4c4f193fb0709787cb9f4e34de74cd63a2dc
+Description:  Kernel modules for IPsec support in both IPv4 and IPv6.
+ Includes:
+ - af_key
+ - xfrm_algo
+ - xfrm_ipcomp
+ - xfrm_user
+
+Package: kmod-ipt-conntrack-extra
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 11878
+Filename: kmod-ipt-conntrack-extra_4.14.167-1_mips_24kc.ipk
+Size: 12687
+SHA256sum: 0bc7c3a6f403601beb999e68e1dc7a8af5b469c8e37f41e2c72769708758f925
+Description:  Netfilter (IPv4) extra kernel modules for connection tracking
+ Includes:
+ - connbytes
+ - connmark/CONNMARK
+ - conntrack
+ - helper
+ - recent
+
+Package: kmod-ipt-conntrack
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 4145
+Filename: kmod-ipt-conntrack_4.14.167-1_mips_24kc.ipk
+Size: 4938
+SHA256sum: bee017b74c616e25b5b58f3f1a891711d2c1d9f35af5080b3bfd19f4f45532b6
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-reject, kmod-nf-ipt
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 14808
+Filename: kmod-ipt-core_4.14.167-1_mips_24kc.ipk
+Size: 15577
+SHA256sum: 09b73c563f80658d826ada0864b62e002e640eba21ea9f1124f33fd06013530f
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-fullconenat
+Version: 4.14.167+2018-12-15-d4daedd0-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-ipt, kmod-nf-nat
+Source: package/lean/openwrt-fullconenat
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: kernel
+Maintainer: Chion Tang <tech@chionlab.moe>
+Architecture: mips_24kc
+Installed-Size: 4139
+Filename: kmod-ipt-fullconenat_4.14.167+2018-12-15-d4daedd0-1_mips_24kc.ipk
+Size: 4913
+SHA256sum: e1fcc6e9c66a2b1e29fcc2c25caa63ffa7a5aeeb05d136cf6e1386994207d8a5
+Description:  FULLCONENAT netfilter module
+
+Package: kmod-ipt-ipopt
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 6038
+Filename: kmod-ipt-ipopt_4.14.167-1_mips_24kc.ipk
+Size: 6854
+SHA256sum: 8ba6d6b4eddf8af082e9cc14987a1cf5b535d55417164ad20bb1c7ec6b702da5
+Description:  Netfilter (IPv4) modules for matching/changing IP packet options
+ Includes:
+ - CLASSIFY
+ - dscp/DSCP
+ - ecn/ECN
+ - hl/HL
+ - length
+ - mark/MARK
+ - statistic
+ - tcpmss
+ - time
+ - ttl/TTL
+ - unclean
+
+Package: kmod-ipt-ipsec
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2647
+Filename: kmod-ipt-ipsec_4.14.167-1_mips_24kc.ipk
+Size: 3409
+SHA256sum: e52c66f814212eea01814f6b9b7956b3ceb71ee006e3f1c86b8a074e53fee9c2
+Description:  Netfilter (IPv4) modules for matching IPSec packets
+ Includes:
+ - ah
+ - esp
+ - policy
+
+Package: kmod-ipt-ipset
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core, kmod-nfnetlink
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 108094
+Filename: kmod-ipt-ipset_4.14.167-1_mips_24kc.ipk
+Size: 108539
+SHA256sum: 7de3bdedcdd4bdd7d740ffd8033741a784434a49b4f0d63b5d2fd61bca52d084
+Description:  IPset netfilter modules
+
+Package: kmod-ipt-nat-extra
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core, kmod-ipt-nat
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1639
+Filename: kmod-ipt-nat-extra_4.14.167-1_mips_24kc.ipk
+Size: 2438
+SHA256sum: 11fa07cfbfac3fd276bd067b44d40522b1a8f5b4dab1d342984c2f226e0e9af7
+Description:  Netfilter (IPv4) kernel modules for extra NAT targets
+ Includes:
+ - NETMAP
+ - REDIRECT
+
+Package: kmod-ipt-nat
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3202
+Filename: kmod-ipt-nat_4.14.167-1_mips_24kc.ipk
+Size: 3988
+SHA256sum: 3136a77587b2d245b12b24b95022fa3f37fe172e18ec80b4a1512c00e72c4196
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core, kmod-nf-flow
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3061
+Filename: kmod-ipt-offload_4.14.167-1_mips_24kc.ipk
+Size: 3780
+SHA256sum: bd781f82b9e12dbafb6167e08fefaeadfaafb3e958b35e3a6212b38ab8b275bc
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-ipt-raw
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1288
+Filename: kmod-ipt-raw_4.14.167-1_mips_24kc.ipk
+Size: 2049
+SHA256sum: 057bb5947b8a0fa1ff2559aab265bb1398ee51d8161776aa249a5006d2625136
+Description:  Netfilter IPv4 raw table support
+
+Package: kmod-ipt-tproxy
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ip6tables, kmod-ipt-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 6440
+Filename: kmod-ipt-tproxy_4.14.167-1_mips_24kc.ipk
+Size: 7222
+SHA256sum: 12005036f1c37ee7b02682d6919f7d051b36a42ad2950e4cd9d83dd2cddfb3fa
+Description:  Kernel modules for Transparent Proxying
+
+Package: kmod-iptunnel4
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1805
+Filename: kmod-iptunnel4_4.14.167-1_mips_24kc.ipk
+Size: 2552
+SHA256sum: 6da13a61a12e409280617e881a7ce84c0b387d146107900b857ccdf31ed74033
+Description:  Kernel modules for IPv4 tunneling
+
+Package: kmod-iptunnel6
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1827
+Filename: kmod-iptunnel6_4.14.167-1_mips_24kc.ipk
+Size: 2577
+SHA256sum: ef5ceed2a2731cae983ad5a13e4525e2bd2b06ae4962817347a19e6adbbd126f
+Description:  Kernel modules for IPv6 tunneling
+
+Package: kmod-iptunnel
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 8023
+Filename: kmod-iptunnel_4.14.167-1_mips_24kc.ipk
+Size: 8760
+SHA256sum: c7e979badaf92985cf79710283a99ef381df26f458d27e42383ed7706b4d2184
+Description:  Kernel module for generic IP tunnel support
+
+Package: kmod-lib-crc-ccitt
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1297
+Filename: kmod-lib-crc-ccitt_4.14.167-1_mips_24kc.ipk
+Size: 2043
+SHA256sum: 519cacc1c42a17c54d7aaa6b1dd463b42233b1958c0b425646817b5635659a08
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-crc16
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1271
+Filename: kmod-lib-crc16_4.14.167-1_mips_24kc.ipk
+Size: 2025
+SHA256sum: 3a965ca995ae00694047ef00d504d18cc55fddc0975aabefd7ac13e1727100c0
+Description:  Kernel module for CRC16 support
+
+Package: kmod-lib-crc32c
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-crypto-crc32c
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1079
+Filename: kmod-lib-crc32c_4.14.167-1_mips_24kc.ipk
+Size: 1834
+SHA256sum: c49030aaf17d723c7a6b33e3348d20eeb39bddee2e624f7122275c15b9908c2b
+Description:  Kernel module for CRC32 support
+
+Package: kmod-lib-textsearch
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3487
+Filename: kmod-lib-textsearch_4.14.167-1_mips_24kc.ipk
+Size: 4206
+SHA256sum: e5492f8a581afbce25e2f9884e7cc837c657aba6c6ebb76495c0a00a519ef059
+Description:  Textsearch support
+
+Package: kmod-lib-zlib-deflate
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 9586
+Filename: kmod-lib-zlib-deflate_4.14.167-1_mips_24kc.ipk
+Size: 10305
+SHA256sum: 1ec414033b8b6c751ff6e2567ac1d35b77520650b6b38e9be256163d1b8c436f
+Description:  Zlib support
+
+Package: kmod-lib-zlib-inflate
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 7764
+Filename: kmod-lib-zlib-inflate_4.14.167-1_mips_24kc.ipk
+Size: 8511
+SHA256sum: 5bbd7c8cb1c3adca78c122f9393ff847901c308be34f401273d492c4dcaccec3
+Description:  Zlib support
+
+Package: kmod-mac80211
+Version: 4.14.167+4.19.98-1-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-cfg80211, hostapd-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 248478
+Filename: kmod-mac80211_4.14.167+4.19.98-1-1_mips_24kc.ipk
+Size: 247402
+SHA256sum: bb7a286419c5aa66ab7f49d54a9b5a4abe8b9b1399010e999f7dda9acea2b6dc
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-macvlan
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 8674
+Filename: kmod-macvlan_4.14.167-1_mips_24kc.ipk
+Size: 9476
+SHA256sum: 1737cf3ebaf4c7d9e08d23d8ee45bb81feb7bf65fca899b9b3bf47cae0fe0c4e
+Description:  A kernel module which allows one to create virtual interfaces that
+ map packets to or from specific MAC addresses to a particular interface
+
+Package: kmod-mppe
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ppp, kmod-crypto-arc4, kmod-crypto-sha1, kmod-crypto-ecb
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 4418
+Filename: kmod-mppe_4.14.167-1_mips_24kc.ipk
+Size: 5169
+SHA256sum: 3cd3f8c92b48c3dd499a2c58b3320dc0fccbdba66870159c9eb89c5cfb5e9158
+Description:  Kernel modules for Microsoft PPP compression/encryption
+
+Package: kmod-mt_wifi
+Version: 4.14.167+5.0.2.0-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), wifi-l1profile
+Source: package/lean/mt/drivers/mt_wifi
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1939039
+Filename: kmod-mt_wifi_4.14.167+5.0.2.0-1_mips_24kc.ipk
+Size: 1922227
+SHA256sum: df6f6a77b6d9adc561ace21ca6031612cd33fb4eae337a47c4e6ab106908bef3
+Description:  MTK wifi AP driver
+
+Package: kmod-nf-conntrack-netlink
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nfnetlink, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 13549
+Filename: kmod-nf-conntrack-netlink_4.14.167-1_mips_24kc.ipk
+Size: 14316
+SHA256sum: db2626672360eb13c5003ad1a72075587a3db954e6489e1640df92917782cb60
+Description:  Kernel modules support for a netlink-based connection tracking
+ userspace interface
+
+Package: kmod-nf-conntrack6
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 8357
+Filename: kmod-nf-conntrack6_4.14.167-1_mips_24kc.ipk
+Size: 9106
+SHA256sum: 6d757102074eb586c3a29a70cd9d192467b334121d71e9960af2d0fd15175293
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 42916
+Filename: kmod-nf-conntrack_4.14.167-1_mips_24kc.ipk
+Size: 43663
+SHA256sum: d1ec894317df590a318290cab7f7cc1140af4f9ddaa7cd214755f4bcd3922d22
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 9549
+Filename: kmod-nf-flow_4.14.167-1_mips_24kc.ipk
+Size: 10314
+SHA256sum: aef029ca3dcf16004988e6e618508f8fe3d32c5e6d7abeb202de7c85d98c2827
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-ipt
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 7718
+Filename: kmod-nf-ipt6_4.14.167-1_mips_24kc.ipk
+Size: 8449
+SHA256sum: 146cf7be6a23a073131e4902bb8b2c66162af61f6849a422fd2860e0592209f5
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 15596
+Filename: kmod-nf-ipt_4.14.167-1_mips_24kc.ipk
+Size: 16269
+SHA256sum: ee15d5fbdd3e2908d2b24f6178cdc0b86ee5f79824dbdcc4f8ea16c2898d2924
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 12378
+Filename: kmod-nf-nat_4.14.167-1_mips_24kc.ipk
+Size: 13115
+SHA256sum: b5ab26d1ca9317453a35f0faf3bc4dde478fa5c0ddfeaa2f8b6d6b77fb27d142
+Description:  Netfilter NAT
+
+Package: kmod-nf-nathelper-extra
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-nat, kmod-lib-textsearch, kmod-ipt-raw
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 51493
+Filename: kmod-nf-nathelper-extra_4.14.167-1_mips_24kc.ipk
+Size: 52285
+SHA256sum: 3842ce1d88352e2f615ae895c3b1ced8f15dfe026d34478a79d48c4f0b39e86e
+Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - amanda
+ - h323
+ - irc
+ - mms
+ - pptp
+ - proto_gre
+ - sip
+ - snmp_basic
+ - tftp
+ - broadcast
+
+Package: kmod-nf-nathelper
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nf-nat
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 5077
+Filename: kmod-nf-nathelper_4.14.167-1_mips_24kc.ipk
+Size: 5835
+SHA256sum: 7a8720d60f84047ebe1ed5b581c866ef2d7ab0fd87e390ff509903d3dc65a091
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+
+Package: kmod-nf-reject6
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2244
+Filename: kmod-nf-reject6_4.14.167-1_mips_24kc.ipk
+Size: 2987
+SHA256sum: c3bcea187ce08207ca764c4a10f89d3c5b4a2c1e7f9bc3ca6030fe4ebb6015d8
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1955
+Filename: kmod-nf-reject_4.14.167-1_mips_24kc.ipk
+Size: 2702
+SHA256sum: 9cf992352ceb8fcd7a4f6da37a6f3963b160624004799ad62c963d9206796d34
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nfnetlink
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3920
+Filename: kmod-nfnetlink_4.14.167-1_mips_24kc.ipk
+Size: 4648
+SHA256sum: 0ab5d46e360210e0eeeb708c3d1c56ab40d7afc4d2fb5564ff4ffd80cb8f3ce8
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-nft-bridge
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nft-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 4546
+Filename: kmod-nft-bridge_4.14.167-1_mips_24kc.ipk
+Size: 5293
+SHA256sum: 4c9ab5d846cc827dbc63c985832ad4314c86d8c26fc3133112db921cd1ba9187
+Description:  Netfilter nf_tables bridge table support
+
+Package: kmod-nft-core
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nfnetlink, kmod-nf-reject, kmod-nf-reject6, kmod-nf-conntrack6
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 64422
+Filename: kmod-nft-core_4.14.167-1_mips_24kc.ipk
+Size: 64987
+SHA256sum: b04209367c0968c7f4d5bdcbe34e595404151a2433d38abe7d1688ec92e6e7b6
+Description:  Kernel module support for nftables
+
+Package: kmod-nft-netdev
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nft-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3048
+Filename: kmod-nft-netdev_4.14.167-1_mips_24kc.ipk
+Size: 3787
+SHA256sum: ff2535e53893bc8ec9fdbe907eb9b76da3980f199f041d0b2da54ba1aba15513
+Description:  Netfilter nf_tables netdev support
+
+Package: kmod-nls-base
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2946
+Filename: kmod-nls-base_4.14.167-1_mips_24kc.ipk
+Size: 3711
+SHA256sum: 58a5212687ece660d49c622980e6d4f82bb7728426acdc8ab91fd76d5343663e
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-nls-utf8
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nls-base
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 962
+Filename: kmod-nls-utf8_4.14.167-1_mips_24kc.ipk
+Size: 1710
+SHA256sum: 76f3ba70e7bcdb49a7135a209ba069abef06b5516bab1d1ed0deefea59023276
+Description:  Kernel module for NLS UTF-8
+
+Package: kmod-ppp
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 20574
+Filename: kmod-ppp_4.14.167-1_mips_24kc.ipk
+Size: 21304
+SHA256sum: a565b5608804d0b067ac2b4a97300a57fd9138ec4ecbfa93c66f23de82a98e0c
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 6537
+Filename: kmod-pppoe_4.14.167-1_mips_24kc.ipk
+Size: 7322
+SHA256sum: 1c201717ac12114445e4a9346b2b0046db87e237bb428e8a895f306dca029fcf
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ppp
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1554
+Filename: kmod-pppox_4.14.167-1_mips_24kc.ipk
+Size: 2303
+SHA256sum: d4ec3862c37a060beb0987ef409cd9cd03983e8790c02dc67c977b73851a3fe8
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-sched-cake
+Version: 4.14.167+2019-03-12-057c7388-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-ipt-conntrack
+Source: package/kernel/kmod-sched-cake
+Section: kernel
+Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
+Architecture: mips_24kc
+Installed-Size: 16232
+Filename: kmod-sched-cake_4.14.167+2019-03-12-057c7388-1_mips_24kc.ipk
+Size: 17023
+SHA256sum: 234dd247411ce91670fd4b78aef7a78631d68eda9144c96a75c9a19f2aaf6df6
+Description:  Common Applications Kept Enhanced fq_codel/blue derived shaper
+
+Package: kmod-sched-connmark
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-sched-core, kmod-ipt-core, kmod-ipt-conntrack-extra
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2526
+Filename: kmod-sched-connmark_4.14.167-1_mips_24kc.ipk
+Size: 3252
+SHA256sum: 2235b8833a0a775b4751579c844c2825d22a101117de472716f206265c70b67d
+Description:  Traffic shaper conntrack mark support
+
+Package: kmod-sched-core
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 45637
+Filename: kmod-sched-core_4.14.167-1_mips_24kc.ipk
+Size: 46326
+SHA256sum: ea64d4027b25d0e3be752b569494c7fac207b7f466fbd03468263c2aff60e9ed
+Description:  Core kernel scheduler support for IP traffic
+
+Package: kmod-sched
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-sched-core, kmod-ipt-core, kmod-lib-crc32c
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 48502
+Filename: kmod-sched_4.14.167-1_mips_24kc.ipk
+Size: 49246
+SHA256sum: 47a11bb10f4d463876813a2af73a7734dbd2ac40f4db4686e9e030a5352f31cc
+Description:  Extra kernel schedulers modules for IP traffic
+
+Package: kmod-scsi-core
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 76723
+Filename: kmod-scsi-core_4.14.167-1_mips_24kc.ipk
+Size: 76911
+SHA256sum: 0227b3390e79dcaf8f67f4b536bcdc226a9953ab1cb48a79e36bda4f7d9b4f2d
+Description:  SCSI device support
+
+Package: kmod-siit
+Version: 4.14.167+1.2-2
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: feeds/packages/net/siit
+License: GPLv2+
+Section: kernel
+Maintainer: Vladimir Ulrich <admin@evl.su>
+Architecture: mips_24kc
+Installed-Size: 4733
+Filename: kmod-siit_4.14.167+1.2-2_mips_24kc.ipk
+Size: 5487
+SHA256sum: 3768ef1c9c6ee7188040c5eaa944efca6df25a7115b32a5dd65e183b5c70bf24
+Description:  Stateless IP ICMP Translation Algorithm
+
+Package: kmod-slhc
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 3376
+Filename: kmod-slhc_4.14.167-1_mips_24kc.ipk
+Size: 4121
+SHA256sum: 2c23287253a904fe453ada0a4eff20a20eea9c1f11fa8c6d11a63316d95ed473
+Description:  Serial Line Header Compression
+
+Package: kmod-sound-core
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-input-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 123315
+Filename: kmod-sound-core_4.14.167-1_mips_24kc.ipk
+Size: 123824
+SHA256sum: e77672b79eebdcc8643016fb51c325cd21923445c3b71d5111bfc6088fe99449
+Description:  Kernel modules for sound support
+
+Package: kmod-tcp-bbr
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 4261
+Filename: kmod-tcp-bbr_4.14.167-1_mips_24kc.ipk
+Size: 5085
+SHA256sum: a3eadc4dca98207a16dc937e77cc2827f505a80f51b4eb9065bcb746fcb18ace
+Description:  Kernel module for BBR (Bottleneck Bandwidth and RTT) TCP congestion
+ control. It requires the fq ("Fair Queue") pacing packet scheduler.
+ For kernel 4.13+, TCP internal pacing is implemented as fallback.
+
+Package: kmod-tun
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 14704
+Filename: kmod-tun_4.14.167-1_mips_24kc.ipk
+Size: 15419
+SHA256sum: 832ae7a2243c3a53ee25573e3ac7c357e5711becd7c11dc0aee9cf8907ff9b18
+Description:  Kernel support for the TUN/TAP tunneling device
+
+Package: kmod-udptunnel4
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2218
+Filename: kmod-udptunnel4_4.14.167-1_mips_24kc.ipk
+Size: 2957
+SHA256sum: 2fd5b60ce4a622aa6ebd2124363b1ec3d2a46cc1d84e7541d1349f79d8b6203a
+Description:  IPv4 UDP tunneling support
+
+Package: kmod-udptunnel6
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa)
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 1631
+Filename: kmod-udptunnel6_4.14.167-1_mips_24kc.ipk
+Size: 2376
+SHA256sum: 277ca0eb0aa830cbf5d03f85ac8fecca8ba176bf82d0644653ff3718c0159892
+Description:  IPv6 UDP tunneling support
+
+Package: kmod-usb-core
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-nls-base
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 76653
+Filename: kmod-usb-core_4.14.167-1_mips_24kc.ipk
+Size: 77244
+SHA256sum: 0e3ab7364776818b954092414d9e551c18db40510f95b83ea8dae05d04636143
+Description:  Kernel support for USB
+
+Package: kmod-usb-ehci
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-usb-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 22201
+Filename: kmod-usb-ehci_4.14.167-1_mips_24kc.ipk
+Size: 22923
+SHA256sum: 50f5bbdb3bab3e1810efd33de3a8e6131645644fdb90d40eda1c765efd87edf0
+Description:  EHCI controller support
+
+Package: kmod-usb-ledtrig-usbport
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-usb-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2358
+Filename: kmod-usb-ledtrig-usbport_4.14.167-1_mips_24kc.ipk
+Size: 3195
+SHA256sum: a339623808e5ebd5a3e26739b26693879ca2073f950e47fd77719d00046e8514
+Description:  This driver allows LEDs to be controlled by USB events. Enabling this
+ trigger allows specifying list of USB ports that should turn on LED
+ when some USB device gets connected.
+ If possible it should be prefered over similar ledtrig-usbdev.
+
+Package: kmod-usb-ohci
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-usb-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 18776
+Filename: kmod-usb-ohci_4.14.167-1_mips_24kc.ipk
+Size: 19492
+SHA256sum: bc7198292b288942374dd6398edeb1b32f60fb53da6432297b0b680b57140913
+Description:  Kernel support for USB OHCI controllers
+
+Package: kmod-usb-printer
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-usb-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 6731
+Filename: kmod-usb-printer_4.14.167-1_mips_24kc.ipk
+Size: 7510
+SHA256sum: f17a34573ff71984c78f88cf68c33f80e0c45ef6ac7cae94eec6a33eb925b0e4
+Description:  Kernel support for USB printers
+
+Package: kmod-usb-storage-extras
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-usb-storage
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 29256
+Filename: kmod-usb-storage-extras_4.14.167-1_mips_24kc.ipk
+Size: 30004
+SHA256sum: a45729dcd0cec76c2b463a611a13bae639d97fa2083ca2d2472354b0ed9dbff0
+Description:  Say Y here if you want to have some more drivers,
+ such as for SmartMedia card readers
+
+Package: kmod-usb-storage
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-scsi-core, kmod-usb-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 22504
+Filename: kmod-usb-storage_4.14.167-1_mips_24kc.ipk
+Size: 22458
+SHA256sum: b093e23efb996fa8908b31e27a9d3e4844fcaee6d8f8a2d2b3a9344c276d806a
+Description:  Kernel support for USB Mass Storage devices
+
+Package: kmod-usb2
+Version: 4.14.167-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-usb-ehci, kmod-usb-core
+Source: package/kernel/linux
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 2840
+Filename: kmod-usb2_4.14.167-1_mips_24kc.ipk
+Size: 3570
+SHA256sum: 6a9aa4b0cda868396eae2054f375b0b59c98df843289c91c2f9d077de212a526
+Description:  Kernel support for USB2 (EHCI) controllers
+
+Package: kmod-wireguard
+Version: 4.14.167+0.0.20191012-1
+Depends: kernel (=4.14.167-1-65ad19b914c4b405626f7141e433cbfa), kmod-udptunnel6, kmod-udptunnel4
+Source: package/network/services/wireguard
+License: GPL-2.0 Apache-2.0
+LicenseFiles: COPYING
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 61496
+Filename: kmod-wireguard_4.14.167+0.0.20191012-1_mips_24kc.ipk
+Size: 62507
+SHA256sum: 87e032c05ac7b58e3fb94d8d5fca21c0a82a8229cb1828e75b40392af32d49fe
+Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and utilizes
+ state-of-the-art cryptography. It aims to be faster, simpler, leaner, and
+ more useful than IPSec, while avoiding the massive headache. It intends to
+ be considerably more performant than OpenVPN.  WireGuard is designed as a
+ general purpose VPN for running on embedded interfaces and super computers
+ alike, fit for many different circumstances. It uses UDP.
+ 
+ This package provides the kernel module for WireGuard.
+
+Package: libatomic
+Version: 7.5.0-1
+Depends: libgcc
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 5276
+Filename: libatomic_7.5.0-1_mips_24kc.ipk
+Size: 6016
+SHA256sum: 9f9c4b1aff0a0848dedb34d3e50a25fb85823576f88d960638e5e9b63efa4c4f
+Description:  Atomic support library
+
+Package: libgcc
+Version: 7.5.0-1
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 34360
+Filename: libgcc_7.5.0-1_mips_24kc.ipk
+Size: 35170
+SHA256sum: 06ff24855791dbd8cf2d9276012637265abc3985afd5591faf650e368ef5d34e
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.8.2-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 18444
+Filename: libip4tc_1.8.2-2_mips_24kc.ipk
+Size: 19139
+SHA256sum: 75253a3c8f4da36a9d4c07392df8d3257f9a5ab9e024396e37ce1dd675278c64
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.8.2-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 18585
+Filename: libip6tc_1.8.2-2_mips_24kc.ipk
+Size: 19291
+SHA256sum: d30de5c298cc9de4af8e9a25832a4ecadb112d9ac75eb8c84b91a44af4290bf7
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2019-09-22-313e8270-1
+Depends: libc, libiwinfo, liblua
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 6079
+Filename: libiwinfo-lua_2019-09-22-313e8270-1_mips_24kc.ipk
+Size: 6752
+SHA256sum: 9d82491e597309225aa1f7a45aaedd42b0f5cbaf22df701c4888d004f2e6c1e2
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo
+Version: 2019-09-22-313e8270-1
+Depends: libc, libnl-tiny, libuci, libubus
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 25762
+Filename: libiwinfo_2019-09-22-313e8270-1_mips_24kc.ipk
+Size: 26497
+SHA256sum: 77636e1a608678840ed7106c575f34f8c8dc5a29a7f02a94aa0e496313da3ff3
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ nl80211 and wext driver interfaces.
+
+Package: libpthread
+Version: 1.1.24-1
+Depends: libgcc
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 125
+Filename: libpthread_1.1.24-1_mips_24kc.ipk
+Size: 876
+SHA256sum: 3d77aca598d27b9683c38ed4bf9f0b0b3e0bbade42e59bbfb43edfb6dc8b71ac
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-1
+Depends: libpthread
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 125
+Filename: librt_1.1.24-1_mips_24kc.ipk
+Size: 885
+SHA256sum: 72aa47f15b52465bfd1cce504188cd559753838466ce9a87a936f6f333f7c2dc
+Description:  POSIX.1b RealTime extension library
+
+Package: libstdcpp
+Version: 7.5.0-1
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 383033
+Filename: libstdcpp_7.5.0-1_mips_24kc.ipk
+Size: 380927
+SHA256sum: 13f52917983c008e8a55917609802b5a18c26e5c6c8e55529cee1e06f0d8b2c6
+Description:  GNU Standard C++ Library v3
+
+Package: libxtables
+Version: 1.8.2-2
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 40728
+Filename: libxtables_1.8.2-2_mips_24kc.ipk
+Size: 41476
+SHA256sum: 86a7b1fdf5a6a0ee87e1a32aeef299d3edecd580a36be66868ccc11de75123b4
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 23
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPL-2.0+
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 14121
+Filename: mtd_23_mips_24kc.ipk
+Size: 14856
+SHA256sum: 22d4a58d7c209f292597fa930d3dd61a0492c60b6e64dc857791d8aec2062a56
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: uboot-envtools
+Version: 2018.03-3
+Depends: libc
+Source: package/boot/uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 12127
+Filename: uboot-envtools_2018.03-3_mips_24kc.ipk
+Size: 12852
+SHA256sum: 6331ea0db7f77ae3da913458c93f28c78d3597da72a58cd31d8cf1aeb6ba3a35
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+
